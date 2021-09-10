@@ -1,0 +1,36 @@
+{
+  "name": "@aquacloud/youtrack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "ttsc -p tsconfig.build.json",
+    "prebuild": "rm -rf dist",
+    "test": "jest"
+  },
+  "bin": {
+    "youtrack": "./dist/index.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.4",
+    "chalk": "^4.1.2",
+    "conf": "^10.0.2",
+    "date-fns": "^2.23.0",
+    "fp-ts": "^2.11.1",
+    "signale": "^1.4.0",
+    "yargs": "^17.1.1",
+    "youtrack-rest-client": "^1.4.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "@types/ms": "^0.7.31",
+    "@types/signale": "^1.4.2",
+    "@types/yargs": "^17.0.2",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
+    "ttypescript": "^1.5.12",
+    "typescript": "^4.4.2",
+    "typescript-transform-paths": "^3.3.1"
+  }
+}
